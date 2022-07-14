@@ -1,0 +1,215 @@
+@import url(color.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+}
+
+.logo {
+    display: block;
+    width: 120px;
+    height: 45px;
+    background-image: url(../images/logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 2.1rem;
+}
+
+.menubar {
+    display: none;
+    content: url(../images/icon-menu.svg);
+    position: absolute;
+    right: 6rem;
+}
+
+.container {
+    /*border: 1px solid green;*/
+    width: 100%;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+}
+
+
+/* navbar */
+nav {
+    margin: 1.5rem 0;
+    display: grid;
+    grid-template-columns: 6.5fr 3.5fr;
+    /*overflow: hidden;*/
+    /*border: 3px solid gray;*/
+}
+
+nav > div > * {
+    display: inline-block;
+    position: relative;
+    /*
+    margin: 0 1rem 0 0rem;
+    /*text-align: top;*/
+    /*border: 1px solid salmon;*/
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    border: none;
+}
+
+.dropDown button {
+    padding: 0.8rem 0.5rem;
+}
+.dropDown button::after {
+    content: url(../images/icon-arrow-down.svg);
+    margin: 1rem;
+}
+
+nav div:nth-child(1) {
+    display: inline-block;   
+}
+
+.dropdown-content {
+    list-style: none;
+    display: none;
+    background-color: white;
+    box-shadow: 0.3rem 1rem 1rem 0.3rem rgba(128, 128, 128, 0.15);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    text-align: left;
+    line-height: 2rem;
+    position: absolute;
+    width: auto;
+    margin: 1rem;
+
+}
+
+.features {
+    width: 150%;
+    right: -12px;
+}
+
+.features li::before {
+    padding: 0 1rem 0 0;
+}
+.features li:nth-child(1)::before {
+    content: url(../images/icon-todo.svg); 
+}
+
+.features li:nth-child(2)::before {
+    content: url(../images/icon-calendar.svg); 
+}
+.features li:nth-child(3)::before {
+    content: url(../images/icon-reminders.svg); 
+}
+.features li:nth-child(4)::before {
+    content: url(../images/icon-planning.svg); 
+}
+
+.company {
+    width: 100%;
+}
+
+
+
+nav > div:nth-child(2) {
+    margin: 0 1rem;
+    text-align: right;
+    /*border: 1px solid pink;*/
+}
+
+
+
+nav button:nth-child(2) {
+    border: 1px solid var(--almostBlack);
+}
+
+/*main part*/
+main {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    height: 85%;
+    margin: 0.5rem 0;
+    /*border: 1px solid salmon;*/
+}
+
+  /*right side picture*/
+#bgd {
+    content: url(../images/image-hero-desktop.png);
+    max-width: 90%;
+    margin-top: 3rem;
+}
+
+/* left side article */
+main article {
+    width: 95%;
+    margin-top: 12rem;
+    padding-right: 6rem;
+    display: block;
+    align-items: center;
+    /*border: 1px solid green;*/
+}
+
+main article > * {
+    margin: 2rem 0;
+}
+
+main article section {
+    padding: 1rem 12% 0 0;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+main article button {
+    padding: 1.5rem 3rem;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 8rem 6rem 8rem 8rem;
+    justify-content: space-evenly;
+}
+
+
+.icons > *{
+    margin: 0 1rem;
+    background-size: contain;
+    width: 6rem;
+    height: 6rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icons div:nth-child(1) {
+    background-image: url(../images/client-databiz.svg);
+    width: 7.2rem;
+}
+
+.icons div:nth-child(2) {
+    background-image: url(../images/client-audiophile.svg);
+    width: 4.5rem;
+}
+
+.icons div:nth-child(3) {
+    background-image: url(../images/client-meet.svg);
+}
+
+.icons div:nth-child(4) {
+    background-image: url(../images/client-maker.svg);
+}
+
+
+
+
+

@@ -1,0 +1,33 @@
+:root {
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almostBlack: hsl(0, 0%, 8%);
+    --footer: hsl(228, 45%, 44%);
+}
+
+* {
+    color: inherit;
+    background-color: inherit;
+}
+
+body {
+    background-color: var(--almostWhite);
+    color: var(--mediumGray);
+}
+
+footer {
+    color: var(--fotter);
+}
+
+nav {
+    font-size: 1.2rem;
+}
+
+main article h1 {
+    color: var(--almostBlack);
+}
+
+main article button {
+    background-color: var(--almostBlack);
+    color: var(--almostWhite);
+}

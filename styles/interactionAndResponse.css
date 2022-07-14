@@ -1,0 +1,260 @@
+@import url(color.css);
+
+nav button:not(#careers):hover, .dropdown-content > *:hover {
+    cursor: pointer;
+    color: var(--almostBlack);
+}
+
+main article button:hover {
+    cursor: pointer;
+    color: var(--almostBlack);
+    background-color: var(--almostWhite);
+    border: 1px solid var(--almostBlack);
+}
+
+@media only screen and (max-width: 1070px) {
+    .logo {
+        width: 90px;
+        height: 45px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+    
+    *:not(h1){
+        font-size: 1rem;
+    }
+
+    main article h1 {
+        font-size: 3.5rem;
+    }
+
+    main article {
+        width: 87%;
+        margin-top: 10rem;
+        padding-right: 1rem;
+    }
+
+    main article > * {
+        margin: 1rem 0;
+        
+    }
+
+    .icons > * {
+        width: 5rem;
+    }
+    .icons div:nth-child(1) {
+        width: 6.2rem;
+    }
+    
+    .icons div:nth-child(2) {
+        width: 3.5rem;
+    }
+
+    #bgd {
+        content: url(../images/image-hero-desktop.png);
+    }
+    
+}
+
+@media only screen and (max-width: 975px) {
+    body {
+        display: block;
+        padding: 0;
+    }
+
+    .logo {
+        margin-left: 6rem;
+    }
+
+    .menubar {
+        display: block;
+    }
+
+    .close {
+        content: url(../images/icon-close-menu.svg);
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+        /*display: block;*/
+        flex-direction: column;
+        padding: 2rem 2rem 0 2rem;
+        width: 40%;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .dropDown button::after {
+        margin: 0.6rem 1rem;
+    }
+
+    nav > div > * {
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav > div:nth-child(1) {
+        margin: 1rem;
+    }
+
+    nav > div:nth-child(1) > * {
+        margin: 0;
+    }
+
+    nav > div:nth-child(1) > button {
+        padding: 0.8rem 0.5rem;
+    }
+
+    nav > div:nth-child(2) {
+        text-align: center;
+        margin: 0.5rem auto 2rem;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        margin-left: 2rem;
+        padding: 0;
+        width: 80%;
+        background-color: var(--almostWhite);
+    }
+
+    .dropDown ::after {
+        position: absolute;
+        top: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #bgd {
+        content: url(../images/image-hero-mobile.png);
+        max-width: 80%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    main article {
+        width: 100%;
+        margin: 3rem auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    main article section{
+        padding: 2rem 9rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+
+    .icons {
+        margin: 1rem auto;
+        grid-template-columns: 5rem 4rem 5rem 5rem;
+    }
+
+    .icons div:nth-child(1) {
+        width: 6.5rem;
+    }
+    
+    .icons div:nth-child(2) {
+        width: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .logo {
+        margin-left: 2rem;
+    }
+    .menubar {
+        right: 2rem;
+    }
+
+    nav {
+        width: 70%;
+        height: auto;
+    }
+
+    #bgd {
+        max-width: 100%;
+    }
+
+    main article h1 {
+        font-size: 2rem;
+    }
+
+    main article section {
+        font-size: 1rem;
+        text-align: center;
+        padding: 2rem 4rem;
+        margin: 0.5rem 0;
+    }
+
+    main article button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .close {
+        right: 1.5rem;
+    }
+    .icons {
+        margin: 3px auto;
+        grid-template-columns: 4rem 3rem 4rem 4rem;
+    }
+
+    .icons > *{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .icons div:nth-child(1) {
+        width: 4rem;
+    }
+    
+    .icons div:nth-child(2) {
+        width: 2.5rem;
+    }
+
+    footer, footer a {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo {
+        margin-left: 1rem;
+    }
+
+    .menubar {
+        right: 1rem;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+    main article h1 {
+        font-size: 1.8rem;
+    }
+
+    main article section {
+        padding: 1rem 2.5rem;
+        line-height: 1.8rem;
+    }
+
+    footer, footer a {
+        font-size: 0.6rem;
+    }
+    
+}
